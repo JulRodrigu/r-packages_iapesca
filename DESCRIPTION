@@ -1,0 +1,17 @@
+Package: iapesca
+Type: Package
+Title: Interpretation of fishing paths from vessels geo-spatial data
+Version: 0.1
+Author: Julien Rodriguez
+Maintainer: Julien Rodriguez <julien.rodriguez@ifremer.fr>
+Depends: sf, R (>= 4.1.0)
+Imports: dplyr, lubridate, ranger, e1071, doBy, RANN, trajr, geodata, foreach, data.table, mapsf, TrackReconstruction, EMbC
+Suggests: parallel, doParallel, mapview, vmstools, iterators
+Description: Compilation of R functions for manipulating and interpretating geo-spatial data from fishing vessels. 
+	This package provides methods for cleaning, detecting fishing trips, resampling positions at a constant time interval, calculating covariates describing boat trajectories.
+	It also offers usefuls functions for optimizing hyperparameters for machine-learning models, creating behavioral diagnosis or analyzing the data as far as geocomputation methods used to analyze passive gears with appropriated fishing effort metrics.
+	These developments have been carried out through the IAPESCA and DELMOGES programs and inspired and guided by the methods and experiences shared during the ICES WKSSFEO in Lisbon in December 2021.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
